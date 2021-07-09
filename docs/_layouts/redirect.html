@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{% include head.html %}
+	<noscript>
+		<meta http-equiv="refresh" content="0; url={{ page.redirect_to }}" />
+	</noscript>
+</head>
+<body style="margin: 2.7rem">
+	<h1 style="line-height: 3.14rem; font-weight: normal">Redirecting...</h1>
+	<br />
+	<a href="{{ page.redirect_to }}">> Click here if you are not redirected.</a>
+	<!-- Epilogue -->
+	<script>location.replace("{{ page.redirect_to }}")</script>
+</body>
+</html>
