@@ -1,0 +1,70 @@
+[
+	{
+		"outboundTag": "block",
+		"domain": [
+			//
+			"geosite:category-ads-all",
+			"geosite:win-spy",
+			"analytics",
+			"telemetry"
+		]
+	},
+	{
+		"outboundTag": "direct",
+		"domain": [
+			//
+			"geosite:private"
+		],
+		"ip": [
+			//
+			"geoip:private"
+		]
+	},
+	{
+		"outboundTag": "proxy",
+		"domain": [
+			//
+			"domain:goog",
+			"domain:googleapis.com",
+			"domain:gstatic.com",
+			"domain:gvt1.com",
+			"domain:gvt2.com",
+			"domain:honkaiimpact3.com",
+			"domain:mihoyo.com",
+			"domain:moegirl.org",
+			"domain:recaptcha.net",
+			"domain:tap.io",
+			"domain:yuanshen.com",
+			"domain:api.bilibili.com",
+			"domain:api.vc.bilibili.com"
+		],
+		"ip": [
+			//
+			"geoip:telegram"
+		]
+	},
+	{
+		"outboundTag": "direct",
+		"domain": [
+			//
+			"geosite:cn",
+			"geosite:apple-cn",
+			"geosite:category-games@cn",
+			"geosite:ookla-speedtest",
+			"geosite:paypal",
+			"geosite:win-update",
+			"domain:aspnetcdn.com",
+			"domain:officecdn-microsoft-com.akamaized.net",
+			"regexp:^.+-mihayo\\.akamaized\\.net$",
+			"regexp:^imap\\..*mail.*\\.com$"
+		],
+		"ip": [
+			//
+			"geoip:cn"
+		]
+	},
+	{
+		"outboundTag": "proxy",
+		"port": "0-65535"
+	}
+]
