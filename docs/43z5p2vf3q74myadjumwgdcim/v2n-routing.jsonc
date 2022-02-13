@@ -5,7 +5,10 @@
 			//
 			"geosite:category-ads-all",
 			"geosite:win-spy",
+			"domain:safebrowsing.googleapis.com",
 			"analytics",
+			"crashlytics",
+			"syndication",
 			"telemetry"
 		]
 	},
@@ -30,13 +33,15 @@
 			"domain:gvt1.com",
 			"domain:gvt2.com",
 			"domain:honkaiimpact3.com",
+			"domain:hoyolab.com",
 			"domain:mihoyo.com",
 			"domain:moegirl.org",
 			"domain:recaptcha.net",
 			"domain:tap.io",
 			"domain:yuanshen.com",
 			"domain:api.bilibili.com",
-			"domain:api.vc.bilibili.com"
+			"domain:api.vc.bilibili.com",
+			"domain:cdn.jsdelivr.net"
 		],
 		"ip": [
 			//
@@ -54,9 +59,11 @@
 			"geosite:paypal",
 			"geosite:win-update",
 			"domain:aspnetcdn.com",
+			"domain:lo4.heptazhou.com",
+			"domain:lo6.heptazhou.com",
+			"domain:mail.me.com",
 			"domain:officecdn-microsoft-com.akamaized.net",
-			"regexp:^.+-mihayo\\.akamaized\\.net$",
-			"regexp:^imap\\..*mail.*\\.com$"
+			"regexp:^.+-mihayo\\.akamaized\\.net$"
 		],
 		"ip": [
 			//

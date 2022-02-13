@@ -1,1 +1,82 @@
-[{"outboundTag": "block", "domain": ["geosite:category-ads-all", "geosite:win-spy", "analytics", "telemetry"]}, {"outboundTag": "direct", "domain": ["geosite:private"], "ip": ["geoip:private"]}, {"outboundTag": "proxy", "domain": ["domain:goog", "domain:googleapis.com", "domain:gstatic.com", "domain:gvt1.com", "domain:gvt2.com", "domain:honkaiimpact3.com", "domain:mihoyo.com", "domain:moegirl.org", "domain:recaptcha.net", "domain:tap.io", "domain:yuanshen.com", "domain:api.bilibili.com", "domain:api.vc.bilibili.com"], "ip": ["geoip:telegram"]}, {"outboundTag": "direct", "domain": ["geosite:cn", "geosite:apple-cn", "geosite:category-games@cn", "geosite:ookla-speedtest", "geosite:paypal", "geosite:win-update", "domain:aspnetcdn.com", "domain:officecdn-microsoft-com.akamaized.net", "regexp:^.+-mihayo\\.akamaized\\.net$", "regexp:^imap\\..*mail.*\\.com$"], "ip": ["geoip:cn"]}, {"outboundTag": "proxy", "port": "0-65535"}, {"outboundTag": "DNS", "domain": ["::1", "127.0.0.1", "localhost", "https://1.1.1.1/dns-query", "https://1.0.0.1/dns-query", "https://cloudflare-dns.com/dns-query"], "enabled": false}]
+[
+{
+"outboundTag": "block",
+"domain": [
+"geosite:category-ads-all",
+"geosite:win-spy",
+"domain:safebrowsing.googleapis.com",
+"analytics",
+"crashlytics",
+"syndication",
+"telemetry"
+]
+},
+{
+"outboundTag": "direct",
+"domain": [
+"geosite:private"
+],
+"ip": [
+"geoip:private"
+]
+},
+{
+"outboundTag": "proxy",
+"domain": [
+"domain:goog",
+"domain:googleapis.com",
+"domain:gstatic.com",
+"domain:gvt1.com",
+"domain:gvt2.com",
+"domain:honkaiimpact3.com",
+"domain:hoyolab.com",
+"domain:mihoyo.com",
+"domain:moegirl.org",
+"domain:recaptcha.net",
+"domain:tap.io",
+"domain:yuanshen.com",
+"domain:api.bilibili.com",
+"domain:api.vc.bilibili.com",
+"domain:cdn.jsdelivr.net"
+],
+"ip": [
+"geoip:telegram"
+]
+},
+{
+"outboundTag": "direct",
+"domain": [
+"geosite:cn",
+"geosite:apple-cn",
+"geosite:category-games@cn",
+"geosite:ookla-speedtest",
+"geosite:paypal",
+"geosite:win-update",
+"domain:aspnetcdn.com",
+"domain:lo4.heptazhou.com",
+"domain:lo6.heptazhou.com",
+"domain:mail.me.com",
+"domain:officecdn-microsoft-com.akamaized.net",
+"regexp:^.+-mihayo\\.akamaized\\.net$"
+],
+"ip": [
+"geoip:cn"
+]
+},
+{
+"outboundTag": "proxy",
+"port": "0-65535"
+},
+{
+"outboundTag": "DNS",
+"domain": [
+"::1",
+"127.0.0.1",
+"localhost",
+"https://1.1.1.1/dns-query",
+"https://1.0.0.1/dns-query",
+"https://cloudflare-dns.com/dns-query"
+],
+"enabled": false
+}
+]
