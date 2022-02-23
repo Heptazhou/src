@@ -4,7 +4,7 @@ const dst = "v2n-routing.json"
 try
 	@info "正在更新"
 	json = read(src, String)
-	json = replace(json, r"^\s*//.*\n"m => "", r",\K\n" => " ", r"(^\t+|\n)"m => "") * "\n"
+	json = replace(json, r"^\s*//.*\n"m => "", r"^\t+"m => "")
 	write(dst, json)
 	@info "完成"
 catch e
