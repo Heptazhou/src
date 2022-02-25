@@ -2,10 +2,15 @@
 	{
 		"outboundTag": "block",
 		"domain": [
-			//
+			// cat
 			"geosite:category-ads-all",
 			"geosite:win-spy",
+			// lld
 			"domain:safebrowsing.googleapis.com",
+			// rex
+			"regexp:^.+\\.localhost\\..+\\.qq\\.com$",
+			"regexp:^localhost\\..+\\.qq\\.com$",
+			// str
 			"analytics",
 			"crashlytics",
 			"syndication",
@@ -15,8 +20,18 @@
 	{
 		"outboundTag": "direct",
 		"domain": [
-			//
-			"geosite:private"
+			/* geosite:private begin */
+			/* <https://github.com/v2fly/domain-list-community/blob/master/data/private> */
+			// cat
+			"domain:lan",
+			"domain:local",
+			"domain:localdomain",
+			"domain:localhost",
+			// sld
+			"domain:home.arpa",
+			// rex
+			"regexp:^[^.]+$"
+			/* geosite:private end */
 		],
 		"ip": [
 			//
@@ -26,19 +41,23 @@
 	{
 		"outboundTag": "proxy",
 		"domain": [
-			//
+			// tld
 			"domain:goog",
+			// sld
 			"domain:googleapis.com",
 			"domain:gstatic.com",
 			"domain:gvt1.com",
 			"domain:gvt2.com",
 			"domain:honkaiimpact3.com",
 			"domain:hoyolab.com",
+			"domain:hoyoverse.com",
 			"domain:mihoyo.com",
 			"domain:moegirl.org",
+			"domain:msftconnecttest.com",
 			"domain:recaptcha.net",
 			"domain:tap.io",
 			"domain:yuanshen.com",
+			// lld
 			"domain:api.bilibili.com",
 			"domain:api.vc.bilibili.com",
 			"domain:cdn.jsdelivr.net"
@@ -51,19 +70,26 @@
 	{
 		"outboundTag": "direct",
 		"domain": [
-			//
+			// cat
 			"geosite:cn",
+			// cat
 			"geosite:apple-cn",
 			"geosite:category-games@cn",
 			"geosite:ookla-speedtest",
 			"geosite:paypal",
 			"geosite:win-update",
+			// sld
 			"domain:aspnetcdn.com",
+			// lld
 			"domain:lo4.heptazhou.com",
 			"domain:lo6.heptazhou.com",
 			"domain:mail.me.com",
 			"domain:officecdn-microsoft-com.akamaized.net",
-			"regexp:^.+-mihayo\\.akamaized\\.net$"
+			// rex
+			"regexp:^.+-mihayo\\.akamaized\\.net$",
+			// str
+			"speedtest",
+			"telecomspeed"
 		],
 		"ip": [
 			//

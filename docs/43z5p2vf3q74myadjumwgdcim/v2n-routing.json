@@ -5,6 +5,8 @@
 "geosite:category-ads-all",
 "geosite:win-spy",
 "domain:safebrowsing.googleapis.com",
+"regexp:^.+\\.localhost\\..+\\.qq\\.com$",
+"regexp:^localhost\\..+\\.qq\\.com$",
 "analytics",
 "crashlytics",
 "syndication",
@@ -14,7 +16,12 @@
 {
 "outboundTag": "direct",
 "domain": [
-"geosite:private"
+"domain:lan",
+"domain:local",
+"domain:localdomain",
+"domain:localhost",
+"domain:home.arpa",
+"regexp:^[^.]+$"
 ],
 "ip": [
 "geoip:private"
@@ -30,8 +37,10 @@
 "domain:gvt2.com",
 "domain:honkaiimpact3.com",
 "domain:hoyolab.com",
+"domain:hoyoverse.com",
 "domain:mihoyo.com",
 "domain:moegirl.org",
+"domain:msftconnecttest.com",
 "domain:recaptcha.net",
 "domain:tap.io",
 "domain:yuanshen.com",
@@ -57,7 +66,9 @@
 "domain:lo6.heptazhou.com",
 "domain:mail.me.com",
 "domain:officecdn-microsoft-com.akamaized.net",
-"regexp:^.+-mihayo\\.akamaized\\.net$"
+"regexp:^.+-mihayo\\.akamaized\\.net$",
+"speedtest",
+"telecomspeed"
 ],
 "ip": [
 "geoip:cn"
