@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
 	box-sizing: border-box;
 }
@@ -36,6 +37,7 @@ button, code, html[lang="zh"] ul>li, input, kbd, label, pre, samp, textarea {
 	html {
 		font-family: Inter, Saranya, Noto, SaranyaWeb, Iosevnya, NotoWeb, Monaco, Menlo, Consolas, sans-serif, monospace, Julia;
 	}
+
 	button, code, html[lang="zh"] ul>li, input, kbd, label, pre, samp, textarea {
 		font-family: Saranya, SaranyaWeb, Iosevnya, Monaco, Menlo, Consolas, monospace, Julia;
 	}
@@ -308,19 +310,17 @@ textarea {
 	}
 }
 
-html {
-	margin-bottom: 4rem;
-}
-
 /* Font */
 
 @media all {
+
 	/* Local */
 	@font-face {
 		font-family: Saranya;
 		font-display: swap;
 		src: local("Saranya Mono SC"), local("Saranya Mono TC"), local("Saranya Mono JA"), local("Saranya Term SC"), local("Saranya Term TC"), local("Saranya Term JA"), local("Saranya Mono SC H"), local("Saranya Mono TC H"), local("Saranya Mono JA H"), local("Saranya Term SC H"), local("Saranya Term TC H"), local("Saranya Term JA H");
 	}
+
 	@font-face {
 		font-family: Saranya;
 		font-style: normal;
@@ -328,6 +328,7 @@ html {
 		font-display: swap;
 		src: local("Saranya Mono SC Regular"), local("Saranya Mono TC Regular"), local("Saranya Mono JA Regular"), local("Saranya Term SC Regular"), local("Saranya Term TC Regular"), local("Saranya Term JA Regular"), local("Saranya Mono SC H Regular"), local("Saranya Mono TC H Regular"), local("Saranya Mono JA H Regular"), local("Saranya Term SC H Regular"), local("Saranya Term TC H Regular"), local("Saranya Term JA H Regular");
 	}
+
 	@font-face {
 		font-family: Saranya;
 		font-style: italic;
@@ -335,6 +336,7 @@ html {
 		font-display: swap;
 		src: local("Saranya Mono SC Regular Italic"), local("Saranya Mono TC Regular Italic"), local("Saranya Mono JA Regular Italic"), local("Saranya Term SC Regular Italic"), local("Saranya Term TC Regular Italic"), local("Saranya Term JA Regular Italic"), local("Saranya Mono SC H Regular Italic"), local("Saranya Mono TC H Regular Italic"), local("Saranya Mono JA H Regular Italic"), local("Saranya Term SC H Regular Italic"), local("Saranya Term TC H Regular Italic"), local("Saranya Term JA H Regular Italic");
 	}
+
 	@font-face {
 		font-family: Saranya;
 		font-style: normal;
@@ -342,6 +344,7 @@ html {
 		font-display: swap;
 		src: local("Saranya Mono SC Bold"), local("Saranya Mono TC Bold"), local("Saranya Mono JA Bold"), local("Saranya Term SC Bold"), local("Saranya Term TC Bold"), local("Saranya Term JA Bold"), local("Saranya Mono SC H Bold"), local("Saranya Mono TC H Bold"), local("Saranya Mono JA H Bold"), local("Saranya Term SC H Bold"), local("Saranya Term TC H Bold"), local("Saranya Term JA H Bold");
 	}
+
 	@font-face {
 		font-family: Saranya;
 		font-style: italic;
@@ -349,11 +352,13 @@ html {
 		font-display: swap;
 		src: local("Saranya Mono SC Bold Italic"), local("Saranya Mono TC Bold Italic"), local("Saranya Mono JA Bold Italic"), local("Saranya Term SC Bold Italic"), local("Saranya Term TC Bold Italic"), local("Saranya Term JA Bold Italic"), local("Saranya Mono SC H Bold Italic"), local("Saranya Mono TC H Bold Italic"), local("Saranya Mono JA H Bold Italic"), local("Saranya Term SC H Bold Italic"), local("Saranya Term TC H Bold Italic"), local("Saranya Term JA H Bold Italic");
 	}
+
 	@font-face {
 		font-family: Noto;
 		font-display: swap;
 		src: local("Noto Sans CJK SC"), local("Source Han Sans SC"), local("Noto Sans CJK TC"), local("Source Han Sans TC"), local("Noto Sans CJK JP"), local("Source Han Sans JP"), local("Noto Sans CJK"), local("Source Han Sans");
 	}
+
 	/* Main */
 	@font-face {
 		font-family: Inter;
@@ -361,18 +366,21 @@ html {
 		font-display: swap;
 		src: local("Inter"), local("Inter Regular"), url("Inter/Inter-Regular.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
 		font-display: swap;
 		src: local("Iosevnya Regular"), url("Iosevnya/iosevnya-regular.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
 		font-display: swap;
 		src: local("Iosevnya Regular Italic"), url("Iosevnya/iosevnya-regular-italic.woff2") format("woff2");
 	}
+
 	/* Addon */
 	@font-face {
 		font-family: Julia;
@@ -380,6 +388,7 @@ html {
 		font-display: swap;
 		src: local("JuliaMono"), local("JuliaMono Regular"), url("Julia/JuliaMono-Regular.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: NotoWeb;
 		font-display: swap;
@@ -388,6 +397,7 @@ html {
 }
 
 @media not all and (min-width: 640px) {
+
 	/* < 640px */
 	@font-face {
 		font-family: SaranyaWeb;
@@ -397,6 +407,7 @@ html {
 }
 
 @media (min-width: 640px), print {
+
 	/* ≥ 640px || print */
 	/* Inter */
 	@font-face {
@@ -407,6 +418,7 @@ html {
 		font-display: swap;
 		src: local("Inter Thin"), url("Inter/Inter-Thin.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -415,6 +427,7 @@ html {
 		font-display: swap;
 		src: local("Inter Thin Italic"), url("Inter/Inter-ThinItalic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -423,6 +436,7 @@ html {
 		font-display: swap;
 		src: local("Inter Extra Light"), url("Inter/Inter-ExtraLight.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -431,6 +445,7 @@ html {
 		font-display: swap;
 		src: local("Inter Extra Light Italic"), url("Inter/Inter-ExtraLightItalic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -439,6 +454,7 @@ html {
 		font-display: swap;
 		src: local("Inter Light"), url("Inter/Inter-Light.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -447,6 +463,7 @@ html {
 		font-display: swap;
 		src: local("Inter Light Italic"), url("Inter/Inter-LightItalic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -455,6 +472,7 @@ html {
 		font-display: swap;
 		src: local("Inter Regular"), url("Inter/Inter-Regular.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -463,6 +481,7 @@ html {
 		font-display: swap;
 		src: local("Inter Italic"), url("Inter/Inter-Italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -471,6 +490,7 @@ html {
 		font-display: swap;
 		src: local("Inter Medium"), url("Inter/Inter-Medium.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -479,6 +499,7 @@ html {
 		font-display: swap;
 		src: local("Inter Medium Italic"), url("Inter/Inter-MediumItalic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -487,6 +508,7 @@ html {
 		font-display: swap;
 		src: local("Inter Semi Bold"), url("Inter/Inter-SemiBold.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -495,6 +517,7 @@ html {
 		font-display: swap;
 		src: local("Inter Semi Bold Italic"), url("Inter/Inter-SemiBoldItalic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -503,6 +526,7 @@ html {
 		font-display: swap;
 		src: local("Inter Bold"), url("Inter/Inter-Bold.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -511,6 +535,7 @@ html {
 		font-display: swap;
 		src: local("Inter Bold Italic"), url("Inter/Inter-BoldItalic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -519,6 +544,7 @@ html {
 		font-display: swap;
 		src: local("Inter Extra Bold"), url("Inter/Inter-ExtraBold.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -527,6 +553,7 @@ html {
 		font-display: swap;
 		src: local("Inter Extra Bold Italic"), url("Inter/Inter-ExtraBoldItalic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -535,6 +562,7 @@ html {
 		font-display: swap;
 		src: local("Inter Black"), url("Inter/Inter-Black.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Inter;
 		font-feature-settings: "tnum", "zero", "cv03", "cv04", "cv07", "cv08", "cv10", "cv11", "ss03";
@@ -543,6 +571,7 @@ html {
 		font-display: swap;
 		src: local("Inter Black Italic"), url("Inter/Inter-BlackItalic.woff2") format("woff2");
 	}
+
 	/* Iosevnya */
 	@font-face {
 		font-family: Iosevnya;
@@ -551,6 +580,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Thin"), url("Iosevnya/iosevnya-thin.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -558,6 +588,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Thin Italic"), url("Iosevnya/iosevnya-thin-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -565,6 +596,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Extra Light"), url("Iosevnya/iosevnya-extralight.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -572,6 +604,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Extra Light Italic"), url("Iosevnya/iosevnya-extralight-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -579,6 +612,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Light"), url("Iosevnya/iosevnya-light.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -586,6 +620,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Light Italic"), url("Iosevnya/iosevnya-light-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -593,6 +628,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Regular"), url("Iosevnya/iosevnya-regular.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -600,6 +636,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Regular Italic"), url("Iosevnya/iosevnya-regular-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -607,6 +644,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Medium"), url("Iosevnya/iosevnya-medium.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -614,6 +652,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Medium Italic"), url("Iosevnya/iosevnya-medium-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -621,6 +660,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Semi Bold"), url("Iosevnya/iosevnya-semibold.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -628,6 +668,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Semi Bold Italic"), url("Iosevnya/iosevnya-semibold-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -635,6 +676,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Bold"), url("Iosevnya/iosevnya-bold.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -642,6 +684,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Bold Italic"), url("Iosevnya/iosevnya-bold-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -649,6 +692,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Extra Bold"), url("Iosevnya/iosevnya-extrabold.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -656,6 +700,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Extra Bold Italic"), url("Iosevnya/iosevnya-extrabold-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: normal;
@@ -663,6 +708,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Black"), url("Iosevnya/iosevnya-black.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: Iosevnya;
 		font-style: italic;
@@ -670,6 +716,7 @@ html {
 		font-display: swap;
 		src: local("Iosevnya Black Italic"), url("Iosevnya/iosevnya-black-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: SaranyaWeb;
 		font-style: normal;
@@ -677,6 +724,7 @@ html {
 		font-display: swap;
 		src: url("Saranya/saranya-mono-sc-regular.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: SaranyaWeb;
 		font-style: italic;
@@ -684,6 +732,7 @@ html {
 		font-display: swap;
 		src: url("Saranya/saranya-mono-sc-regular-italic.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: SaranyaWeb;
 		font-style: normal;
@@ -691,6 +740,7 @@ html {
 		font-display: swap;
 		src: url("Saranya/saranya-mono-sc-bold.woff2") format("woff2");
 	}
+
 	@font-face {
 		font-family: SaranyaWeb;
 		font-style: italic;
