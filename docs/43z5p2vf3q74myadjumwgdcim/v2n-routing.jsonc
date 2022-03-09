@@ -5,23 +5,22 @@
 			// cat
 			"geosite:category-ads-all",
 			"geosite:win-spy",
-			// lld
-			"domain:safebrowsing.googleapis.com",
 			// rex
-			"regexp:^.+\\.localhost\\..+\\.qq\\.com$",
-			"regexp:^localhost\\..+\\.qq\\.com$",
+			"regexp:^(.+\\.)?localhost\\..+\\.qq\\.com$",
 			// str
+			"adservice",
 			"analytics",
 			"crashlytics",
+			"safebrowsing",
 			"syndication",
+			"telecommand",
 			"telemetry"
 		]
 	},
 	{
 		"outboundTag": "direct",
 		"domain": [
-			/* geosite:private begin */
-			/* <https://github.com/v2fly/domain-list-community/blob/master/data/private> */
+			/* geosite:private */
 			// cat
 			"domain:lan",
 			"domain:local",
@@ -31,7 +30,7 @@
 			"domain:home.arpa",
 			// rex
 			"regexp:^[^.]+$"
-			/* geosite:private end */
+			/* <https://github.com/v2fly/domain-list-community/blob/master/data/private> */
 		],
 		"ip": [
 			//
@@ -41,22 +40,42 @@
 	{
 		"outboundTag": "proxy",
 		"domain": [
+			/* geosite:google */
 			// tld
 			"domain:goog",
+			"domain:google",
 			// sld
 			"domain:googleapis.com",
 			"domain:gstatic.com",
+			"domain:gvt0.com",
 			"domain:gvt1.com",
 			"domain:gvt2.com",
+			"domain:gvt3.com",
+			"domain:gvt4.com",
+			"domain:gvt5.com",
+			"domain:gvt6.com",
+			"domain:gvt7.com",
+			"domain:gvt8.com",
+			"domain:gvt9.com",
+			"domain:recaptcha.net",
+			// lld
+			"domain:services.googleapis.cn",
+			/* <https://github.com/v2fly/domain-list-community/blob/master/data/google> */
+
+			/* geosite:mihoyo */
+			// sld
 			"domain:honkaiimpact3.com",
+			"domain:honkaistarrail.com",
 			"domain:hoyolab.com",
 			"domain:hoyoverse.com",
 			"domain:mihoyo.com",
+			"domain:yuanshen.com",
+			/* <https://github.com/v2fly/domain-list-community/blob/master/data/mihoyo> */
+
+			// sld
 			"domain:moegirl.org",
 			"domain:msftconnecttest.com",
-			"domain:recaptcha.net",
 			"domain:tap.io",
-			"domain:yuanshen.com",
 			// lld
 			"domain:api.bilibili.com",
 			"domain:api.vc.bilibili.com",
@@ -80,6 +99,7 @@
 			"geosite:win-update",
 			// sld
 			"domain:aspnetcdn.com",
+			"domain:msftncsi.com",
 			// lld
 			"domain:lo4.heptazhou.com",
 			"domain:lo6.heptazhou.com",
