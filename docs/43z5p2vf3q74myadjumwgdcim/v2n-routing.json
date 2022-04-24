@@ -7,6 +7,7 @@
 "regexp:^(.+\\.)?localhost\\..+\\.qq\\.com$",
 "adservice",
 "analytics",
+"applicationinsight",
 "crashlytics",
 "safebrowsing",
 "syndication",

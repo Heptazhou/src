@@ -15,7 +15,7 @@ catch e
 	@info "错误"
 	@info e
 end
-length(ARGS) > 0 && exit()
+isempty(ARGS) || exit()
 print("> ")
 readline()
 

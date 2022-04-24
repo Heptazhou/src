@@ -10,6 +10,7 @@
 			// str
 			"adservice",
 			"analytics",
+			"applicationinsight",
 			"crashlytics",
 			"safebrowsing",
 			"syndication",
