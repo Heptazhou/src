@@ -124,6 +124,14 @@ button[disabled], input[disabled], textarea[disabled] {
 	box-shadow: none;
 }
 
+code {
+	background-color: rgba(255, 255, 255, 0.2);
+	-moz-border-radius: 0.2rem;
+	-webkit-border-radius: 0.2rem;
+	border-radius: 0.2rem;
+	padding: 0.1rem 0.2rem;
+}
+
 dir, h1, h2, h3, h4, h5, h6, menu, p, summary, ul {
 	margin-inline-start: 0;
 	margin-inline-end: 0;
