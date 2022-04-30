@@ -6,7 +6,7 @@
 			"geosite:category-ads-all",
 			"geosite:win-spy",
 			// rex
-			"regexp:^(.+\\.)?localhost\\..+\\.qq\\.com$",
+			"regexp:^(.+\\.)?localhost(\\..+)?\\.qq\\.com$",
 			// str
 			"adservice",
 			"analytics",
@@ -16,6 +16,13 @@
 			"syndication",
 			"telecommand",
 			"telemetry"
+		]
+	},
+	{
+		"outboundTag": "direct",
+		"protocol": [
+			//
+			"bittorrent"
 		]
 	},
 	{
@@ -78,8 +85,6 @@
 			"domain:msftconnecttest.com",
 			"domain:tap.io",
 			// lld
-			"domain:api.bilibili.com",
-			"domain:api.vc.bilibili.com",
 			"domain:cdn.jsdelivr.net"
 		],
 		"ip": [

@@ -4,7 +4,7 @@
 "domain": [
 "geosite:category-ads-all",
 "geosite:win-spy",
-"regexp:^(.+\\.)?localhost\\..+\\.qq\\.com$",
+"regexp:^(.+\\.)?localhost(\\..+)?\\.qq\\.com$",
 "adservice",
 "analytics",
 "applicationinsight",
@@ -13,6 +13,12 @@
 "syndication",
 "telecommand",
 "telemetry"
+]
+},
+{
+"outboundTag": "direct",
+"protocol": [
+"bittorrent"
 ]
 },
 {
@@ -57,8 +63,6 @@
 "domain:moegirl.org",
 "domain:msftconnecttest.com",
 "domain:tap.io",
-"domain:api.bilibili.com",
-"domain:api.vc.bilibili.com",
 "domain:cdn.jsdelivr.net"
 ],
 "ip": [
