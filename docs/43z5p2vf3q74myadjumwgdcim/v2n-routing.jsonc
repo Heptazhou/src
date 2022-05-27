@@ -8,10 +8,12 @@
 			// rex
 			"regexp:^(.+\\.)?localhost(\\..+)?\\.qq\\.com$",
 			// str
+			"adobedtm",
 			"adservice",
 			"analytics",
 			"applicationinsight",
 			"crashlytics",
+			"googletagmanager",
 			"safebrowsing",
 			"syndication",
 			"telecommand",
@@ -48,6 +50,9 @@
 	{
 		"outboundTag": "proxy",
 		"domain": [
+			// cat
+			"geosite:hoyoverse",
+
 			/* geosite:google */
 			// tld
 			"domain:goog",
@@ -55,37 +60,17 @@
 			// sld
 			"domain:googleapis.com",
 			"domain:gstatic.com",
-			"domain:gvt0.com",
-			"domain:gvt1.com",
-			"domain:gvt2.com",
-			"domain:gvt3.com",
-			"domain:gvt4.com",
-			"domain:gvt5.com",
-			"domain:gvt6.com",
-			"domain:gvt7.com",
-			"domain:gvt8.com",
-			"domain:gvt9.com",
 			"domain:recaptcha.net",
 			// lld
 			"domain:services.googleapis.cn",
+			// rex
+			"regexp:^(.+\\.)?gvt[0-9].com$",
 			/* <https://github.com/v2fly/domain-list-community/blob/master/data/google> */
-
-			/* geosite:mihoyo */
-			// sld
-			"domain:honkaiimpact3.com",
-			"domain:honkaistarrail.com",
-			"domain:hoyolab.com",
-			"domain:hoyoverse.com",
-			"domain:mihoyo.com",
-			"domain:yuanshen.com",
-			/* <https://github.com/v2fly/domain-list-community/blob/master/data/mihoyo> */
 
 			// sld
 			"domain:moegirl.org",
 			"domain:msftconnecttest.com",
-			"domain:tap.io",
-			// lld
-			"domain:cdn.jsdelivr.net"
+			"domain:tap.io"
 		],
 		"ip": [
 			//
@@ -104,7 +89,9 @@
 			"geosite:paypal",
 			"geosite:win-update",
 			// sld
+			"domain:asiamiles.com",
 			"domain:aspnetcdn.com",
+			"domain:cathaypacific.com",
 			"domain:msftncsi.com",
 			// lld
 			"domain:lo4.heptazhou.com",
@@ -129,13 +116,14 @@
 	{
 		"outboundTag": "DNS",
 		"domain": [
-			//
-			"::1",
-			"127.0.0.1",
-			"localhost",
-			"https://1.1.1.1/dns-query",
-			"https://1.0.0.1/dns-query",
-			"https://cloudflare-dns.com/dns-query"
+			// * no newline & no trailing comma
+			"::1,127.0.0.1,localhost,https://1.1.1.1/dns-query,https://1.0.0.1/dns-query,https://cloudflare-dns.com/dns-query"
+			// ::1
+			// 127.0.0.1
+			// localhost
+			// https://1.1.1.1/dns-query
+			// https://1.0.0.1/dns-query
+			// https://cloudflare-dns.com/dns-query
 		],
 		"enabled": false
 	}
