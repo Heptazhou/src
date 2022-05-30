@@ -5,15 +5,19 @@
 			// cat
 			"geosite:category-ads-all",
 			"geosite:win-spy",
+			// lld
+			"domain:api.radar.cloudflare.com",
 			// rex
-			"regexp:^(.+\\.)?localhost(\\..+)?\\.qq\\.com$",
+			"regexp:^(.+\\.)?(localhost|report)(\\..+)?\\.(qq|weiyun)\\.com$",
 			// str
 			"adobedtm",
 			"adservice",
 			"analytics",
 			"applicationinsight",
 			"crashlytics",
-			"googletagmanager",
+			"googlead",
+			"googletag",
+			"gstaticad",
 			"safebrowsing",
 			"syndication",
 			"telecommand",
@@ -31,11 +35,14 @@
 		"outboundTag": "direct",
 		"domain": [
 			/* geosite:private */
-			// cat
+			// tld
+			"domain:example",
+			"domain:invalid",
 			"domain:lan",
 			"domain:local",
 			"domain:localdomain",
 			"domain:localhost",
+			"domain:test",
 			// sld
 			"domain:home.arpa",
 			// rex
@@ -92,6 +99,7 @@
 			"domain:asiamiles.com",
 			"domain:aspnetcdn.com",
 			"domain:cathaypacific.com",
+			"domain:cloudfront.net",
 			"domain:msftncsi.com",
 			// lld
 			"domain:lo4.heptazhou.com",
@@ -100,6 +108,7 @@
 			"domain:officecdn-microsoft-com.akamaized.net",
 			// rex
 			"regexp:^.+-mihayo\\.akamaized\\.net$",
+			"regexp:^(.+\\.)?jvmao(zhongbao)?.com$",
 			// str
 			"speedtest",
 			"telecomspeed"
