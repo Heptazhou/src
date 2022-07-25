@@ -26,13 +26,6 @@
 	},
 	{
 		"outboundTag": "direct",
-		"protocol": [
-			//
-			"bittorrent"
-		]
-	},
-	{
-		"outboundTag": "direct",
 		"domain": [
 			/* geosite:private */
 			// tld
@@ -52,6 +45,13 @@
 		"ip": [
 			//
 			"geoip:private"
+		]
+	},
+	{
+		"outboundTag": "direct",
+		"protocol": [
+			//
+			"bittorrent"
 		]
 	},
 	{
@@ -77,7 +77,9 @@
 			// sld
 			"domain:moegirl.org",
 			"domain:msftconnecttest.com",
-			"domain:tap.io"
+			"domain:tap.io",
+			// lld
+			"domain:autopatchhk.yuanshen.com"
 		],
 		"ip": [
 			//
@@ -109,6 +111,7 @@
 			// rex
 			"regexp:^.+-mihayo\\.akamaized\\.net$",
 			"regexp:^(.+\\.)?jvmao(zhongbao)?.com$",
+			"regexp:^gog-cdn-.+\\.footprint\\.net$",
 			// str
 			"speedtest",
 			"telecomspeed"

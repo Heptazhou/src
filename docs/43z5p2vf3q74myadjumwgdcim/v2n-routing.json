@@ -22,12 +22,6 @@
 },
 {
 "outboundTag": "direct",
-"protocol": [
-"bittorrent"
-]
-},
-{
-"outboundTag": "direct",
 "domain": [
 "domain:example",
 "domain:invalid",
@@ -44,6 +38,12 @@
 ]
 },
 {
+"outboundTag": "direct",
+"protocol": [
+"bittorrent"
+]
+},
+{
 "outboundTag": "proxy",
 "domain": [
 "geosite:hoyoverse",
@@ -56,7 +56,8 @@
 "regexp:^(.+\\.)?gvt[0-9].com$",
 "domain:moegirl.org",
 "domain:msftconnecttest.com",
-"domain:tap.io"
+"domain:tap.io",
+"domain:autopatchhk.yuanshen.com"
 ],
 "ip": [
 "geoip:telegram"
@@ -82,6 +83,7 @@
 "domain:officecdn-microsoft-com.akamaized.net",
 "regexp:^.+-mihayo\\.akamaized\\.net$",
 "regexp:^(.+\\.)?jvmao(zhongbao)?.com$",
+"regexp:^gog-cdn-.+\\.footprint\\.net$",
 "speedtest",
 "telecomspeed"
 ],
