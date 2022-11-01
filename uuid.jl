@@ -4,9 +4,8 @@ using UUID4
 while true
 	print("> ")
 	input_fmt = 0
-	str = replace(readline(), r"\s" => "")
 	id = try
-		r = uuid_parse(str)
+		r = uuid_parse(replace(readline(), r"\s" => ""))
 		input_fmt = r[1]
 		uuid_string(r[2])
 	catch
