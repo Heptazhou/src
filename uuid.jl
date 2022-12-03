@@ -14,7 +14,8 @@ while true
 	# while !occursin("", id[]) id = uuid_string() end
 	for i in uuid_formats()
 		len = length(id[i])
-		@logmsg i == len ? Info : Warn "$(lpad(len, 3)) $(i == input_fmt ? "<<" : "  ") $(id[i])"
+		msg = "$(lpad(len, 3)) $(i == input_fmt ? "<<" : "  ") $(id[i])"
+		@logmsg i == len ? Info : Warn msg
 	end
 end
 

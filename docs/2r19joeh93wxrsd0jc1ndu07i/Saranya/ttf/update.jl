@@ -10,7 +10,7 @@ const list = [
 try
 	n = 0
 	for f in "saranya-mono-sc-" .* list .* ".ttf"
-		cp(joinpath(src, f), joinpath(dst, f), force = true)
+		cp(joinpath.([src, dst], f)..., force = true)
 		n += 1
 	end
 	@info "完成 > $n"

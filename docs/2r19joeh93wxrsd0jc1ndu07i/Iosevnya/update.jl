@@ -24,7 +24,7 @@ const list = [
 try
 	n = 0
 	for f in "iosevnya-" .* list .* ".woff2"
-		cp(joinpath(src, f), joinpath(dst, f), force = true)
+		cp(joinpath.([src, dst], f)..., force = true)
 		n += 1
 	end
 	@info "完成 > $n"
