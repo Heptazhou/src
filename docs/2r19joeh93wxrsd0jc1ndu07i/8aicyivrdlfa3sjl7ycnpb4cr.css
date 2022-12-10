@@ -197,12 +197,9 @@ ol, ul {
 	white-space: normal;
 }
 
-pre {
-	white-space: break-spaces;
-}
-
-q {
+pre, q {
 	white-space: pre-wrap;
+	white-space: break-spaces;
 }
 
 q::after, q::before {
