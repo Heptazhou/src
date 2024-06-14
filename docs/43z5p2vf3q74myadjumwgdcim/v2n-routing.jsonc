@@ -39,7 +39,7 @@
 			// sld
 			"domain:home.arpa",
 			// rex
-			"regexp:^[^.]+$"
+			"regexp:^[^.:]+$"
 			/* <https://github.com/v2fly/domain-list-community/blob/master/data/private> */
 		],
 		"ip": [
@@ -91,6 +91,7 @@
 		"domain": [
 			// cat
 			"geosite:cn",
+			"geosite:private",
 			// cat
 			"geosite:apple-cn",
 			"geosite:category-games@cn",
@@ -104,6 +105,7 @@
 			"domain:cloudfront.net",
 			"domain:msftncsi.com",
 			// lld
+			"domain:cloud.nikke-kr.com",
 			"domain:lo4.heptazhou.com",
 			"domain:lo6.heptazhou.com",
 			"domain:mail.me.com",
@@ -129,13 +131,14 @@
 		"outboundTag": "DNS",
 		"domain": [
 			// * no newline & no trailing comma
-			"::1,127.0.0.1,localhost,https://1.1.1.1/dns-query,https://1.0.0.1/dns-query,https://cloudflare-dns.com/dns-query"
+			"::1,127.0.0.1,localhost,https://1.1.1.1/dns-query,https://1.0.0.1/dns-query,https://cloudflare-dns.com/dns-query,https://mozilla.cloudflare-dns.com/dns-query"
 			// ::1
 			// 127.0.0.1
 			// localhost
 			// https://1.1.1.1/dns-query
 			// https://1.0.0.1/dns-query
 			// https://cloudflare-dns.com/dns-query
+			// https://mozilla.cloudflare-dns.com/dns-query
 		],
 		"enabled": false
 	}

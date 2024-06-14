@@ -31,7 +31,7 @@
 "domain:localhost",
 "domain:test",
 "domain:home.arpa",
-"regexp:^[^.]+$"
+"regexp:^[^.:]+$"
 ],
 "ip": [
 "geoip:private"
@@ -67,6 +67,7 @@
 "outboundTag": "direct",
 "domain": [
 "geosite:cn",
+"geosite:private",
 "geosite:apple-cn",
 "geosite:category-games@cn",
 "geosite:ookla-speedtest",
@@ -77,6 +78,7 @@
 "domain:cathaypacific.com",
 "domain:cloudfront.net",
 "domain:msftncsi.com",
+"domain:cloud.nikke-kr.com",
 "domain:lo4.heptazhou.com",
 "domain:lo6.heptazhou.com",
 "domain:mail.me.com",
@@ -98,7 +100,7 @@
 {
 "outboundTag": "DNS",
 "domain": [
-"::1,127.0.0.1,localhost,https://1.1.1.1/dns-query,https://1.0.0.1/dns-query,https://cloudflare-dns.com/dns-query"
+"::1,127.0.0.1,localhost,https://1.1.1.1/dns-query,https://1.0.0.1/dns-query,https://cloudflare-dns.com/dns-query,https://mozilla.cloudflare-dns.com/dns-query"
 ],
 "enabled": false
 }
